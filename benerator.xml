@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<setup
+        xmlns="http://databene.org/benerator/0.9.8"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://databene.org/benerator/0.9.8 benerator-0.9.8.xsd">
+
+    <!-- Bean Definitons -->
+    <bean
+            id="PersonGenerator"
+            class="org.databene.domain.person.PersonGenerator"></bean>
+
+    <!-- Generation Logic -->
+    <generate
+            type="Person"
+            count="10"
+            consumer="ConsoleExporter"
+            generator="org.databene.domain.person.PersonGenerator" />
+
+</setup>
